@@ -1,0 +1,4 @@
+usepython 3.11
+in .env after = replace your key
+ pip install -r requirements.txt
+python chat.py

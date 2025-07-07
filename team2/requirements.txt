@@ -1,0 +1,5 @@
+﻿gradio>=4.0.0
+python-dotenv>=1.0.0
+langchain-groq>=0.1.4
+mcp-use>=0.1.1
+npx>=10.2.0; sys_platform != "win32"  # Windows-ல் npx வெளிப்படையாக நிறுவ தேவைப்படலாம்
