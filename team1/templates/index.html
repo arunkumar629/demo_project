@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Table</title>
+</head>
+<body>
+    <h1>Users List</h1>
+    <table border="1">
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Age</th></tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Add User</h2>
+    <form action="/add_user" method="post">
+        Name: <input type="text" name="name" required><br>
+        Age: <input type="number" name="age" required><br>
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>
